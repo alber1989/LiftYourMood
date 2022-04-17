@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LiftYourMood</string>
+    <string name="distorsionesCognitivasTitle">Distorsiones Cognitivas</string>
+    <string name="introduceNombre"> Introduce tu nombre</string>
+
+    <string name="prediccionFuturoTitle">Predicción de futuro</string>
+    <string name="catastrofizacionTitle">Catastrofización</string>
+    <string name="razonamientoEmocionalTitle">Razonamiento Emocional</string>
+
+    <string name ="instruccionesDistorsionesCognitivas1"> Ahora </string>
+    <string name="instruccionesDistorsionesCognitivas2"> selecciona aquellas distorsiones que identifiques en tu pensamiento</string>
+</resources>
