@@ -19,9 +19,16 @@ tools:context=".MainActivity">
     android:layout_width="match_parent"
     android:layout_height="50dp" />
 
-<LinearLayout
+    <TextView
+        android:id="@+id/pruebaNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        />
+
+    <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <TextView
@@ -30,22 +37,32 @@ tools:context=".MainActivity">
         android:layout_height="wrap_content"
          />
 
-    <RadioButton
-        android:id="@+id/radio_catastrof_DC"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/catastrofizacionTitle" />
+        <CheckBox
+            android:id="@+id/checkbox_catastrof_DC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/catastrofizacionTitle"
+            android:onClick="onCheckboxClicked"/>
 
-    <RadioButton
-        android:id="@+id/radio_prediccion_DC"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/prediccionFuturoTitle" />
+        <CheckBox
+            android:id="@+id/checkbox_prediccion_DC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prediccionFuturoTitle"
+            android:onClick="onCheckboxClicked"/>
 
-    <RadioButton
-        android:id="@+id/radio_remocional_DC"
+        <CheckBox
+            android:id="@+id/checkbox_remocional_DC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/razonamientoEmocionalTitle"
+            android:onClick="onCheckboxClicked"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSiguienteDistorsiones"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/razonamientoEmocionalTitle" />
-</LinearLayout>
+        android:text="@string/siguienteDistorsiones" />
 </LinearLayout>

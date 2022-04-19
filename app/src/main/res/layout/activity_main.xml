@@ -11,13 +11,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
         android:text="@string/introduceNombre"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/campoNombreUsuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/campoNombreUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="173dp"
@@ -27,4 +27,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/instruccionesEleccionFaceta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elige la faceta que quieres trabajar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPresente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Presente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="476dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
