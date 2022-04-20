@@ -64,5 +64,6 @@ tools:context=".MainActivity">
         android:id="@+id/buttonSiguienteDistorsiones"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/siguienteDistorsiones" />
+        android:text="@string/siguienteDistorsiones"
+        android:onClick="enviarDistorsionesADebate"/>
 </LinearLayout>

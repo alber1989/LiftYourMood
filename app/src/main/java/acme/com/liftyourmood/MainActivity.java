@@ -9,6 +9,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+/*
+TODO 200422: ya tenemos la lista de distorsiones y el envío al cambio de activity
+    nos queda:
+        - Añadir un editText con la informacion que queramos añadir en el debate
+        - Una nueva view con la que poner el pensamiento racional resultante
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     public static final String NOMBRE_DE_USUARIO = "acme.com.liftyourmood";

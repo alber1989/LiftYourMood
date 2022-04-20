@@ -11,8 +11,10 @@ import android.widget.Toast;
 public class MenuSeleccionDistorsiones extends AppCompatActivity {
 
     String[] distorsionesDisponibles;      // = new String[3]{"Catastrofizacion","RazonamientoEmocional","PrediccionFuturo"};
-    String[] distorsionesSeleccionadas = new String[3];
+    String[] distorsionesSeleccionadas = new String[]{"","",""};
 
+
+    public static final String DISTORSIONES_SELECCIONADAS = "acme.com.liftyourmood"; //Lo usaremos para el Intent
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,7 @@ public class MenuSeleccionDistorsiones extends AppCompatActivity {
         // Is the view now checked?
         boolean checked = ((CheckBox)view).isChecked();
 
+
         // Check which checkbox was clicked
         switch(view.getId()) {
             case R.id.checkbox_catastrof_DC:
@@ -45,25 +48,42 @@ public class MenuSeleccionDistorsiones extends AppCompatActivity {
                   distorsionesSeleccionadas[0] = ((CheckBox)view).getText().toString();
 
                 }
-                // Put some meat on the sandwich
+
             else
-                // Remove the meat
+                    distorsionesSeleccionadas[0] = "";
                 break;
             case R.id.checkbox_prediccion_DC:
                 if (checked)
                     distorsionesSeleccionadas[1] = ((CheckBox)view).getText().toString();
             else
-                // I'm lactose intolerant
+                    distorsionesSeleccionadas[1] = "";
                 break;
 
             case R.id.checkbox_remocional_DC:
                 if (checked)
                     distorsionesSeleccionadas[2] = ((CheckBox)view).getText().toString();
             else
-                // I'm lactose intolerant
+                    distorsionesSeleccionadas[2] = "";
                 break;
+            default:
+
 
         }
+    }
+
+    public void enviarDistorsionesADebate(View view){
+
+
+        //Toast.makeText(this, nombreUsuarioEnviar, Toast.LENGTH_SHORT).show();
+
+     //   for  (int i=0; i<distorsionesSeleccionadas.length; i++)
+     //       Toast.makeText(this, distorsionesSeleccionadas[i], Toast.LENGTH_SHORT).show();
+
+        Intent intent = new Intent(this, RutinaDebate.class);
+        intent.putExtra(DISTORSIONES_SELECCIONADAS, distorsionesSeleccionadas);
+        startActivity(intent);
+
+
     }
     
 }
