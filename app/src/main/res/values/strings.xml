@@ -10,13 +10,12 @@
     <string name="instruccionesDistorsionesCognitivas1"> Ahora </string>
     <string name="instruccionesDistorsionesCognitivas2"> selecciona aquellas distorsiones que identifiques en tu pensamiento</string>
     <string name="siguienteDistorsiones">Siguiente</string>
-    <string name="title_activity_rutina_debate">RutinaDebate</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!--Rutina Debate-->
+
+    <string name="title_activity_rutina_debate">RutinaDebate</string>
+    <string name="instrucciones_rutina_debate">Anota las razones y hechos que debatan este pensamiento irracional</string>
+    <string name="has_seleccionado">Has seleccionado las siguientes distorsiones</string>
+
 </resources>
