@@ -12,7 +12,6 @@ import android.widget.Toast;
 /*
 TODO 200422: ya tenemos la lista de distorsiones y el envío al cambio de activity
     nos queda:
-        - Añadir una lista con las distorsiones que hayamos elegido. RecyclerView
         - Una nueva view con la que poner el pensamiento racional resultante
  */
 
