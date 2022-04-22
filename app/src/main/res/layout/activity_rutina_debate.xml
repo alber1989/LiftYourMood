@@ -27,4 +27,16 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="20dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listaDistorsionesSeleccionadas"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/escribeAqui"/>
+
+
 </LinearLayout>

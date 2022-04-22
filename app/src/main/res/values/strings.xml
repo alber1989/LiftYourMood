@@ -17,5 +17,6 @@
     <string name="title_activity_rutina_debate">RutinaDebate</string>
     <string name="instrucciones_rutina_debate">Anota las razones y hechos que debatan este pensamiento irracional</string>
     <string name="has_seleccionado">Has seleccionado las siguientes distorsiones</string>
+    <string name="escribeAqui">Escribe aquí...</string>
 
 </resources>
