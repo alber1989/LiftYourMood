@@ -12,6 +12,7 @@ import android.widget.Toast;
 /*
 TODO 200422: ya tenemos la lista de distorsiones y el envío al cambio de activity
     nos queda:
+        - Hacer la vista que contenga el pensamiento distorsionado
         - Una nueva view con la que poner el pensamiento racional resultante
  */
 

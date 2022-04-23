@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">LiftYourMood</string>
     <string name="distorsionesCognitivasTitle">Distorsiones Cognitivas</string>
     <string name="introduceNombre"> Introduce tu nombre</string>
@@ -11,6 +12,12 @@
     <string name="instruccionesDistorsionesCognitivas2"> selecciona aquellas distorsiones que identifiques en tu pensamiento</string>
     <string name="siguienteDistorsiones">Siguiente</string>
 
+    <!--Rutina Escribir Pensamiento Distorsionado-->
+
+    <string name="introduccionDistorsionesCognitivas"> Las distorsiones cognitivas son atajos erróneos que a veces nuestra mente toma para sacar conclusiones. Los pensamientos negativos están llenos de ellas.
+    </string>
+    
+    <string name="escribeTuPensamientoNegativo"> Escribe tu pensamiento negativo </string>
 
     <!--Rutina Debate-->
 

@@ -1,0 +1,16 @@
+package acme.com.liftyourmood;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+public class EscribeTuPensamientoNegativo extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_escribe_tu_pensamiento_negativo);
+
+
+    }
+}

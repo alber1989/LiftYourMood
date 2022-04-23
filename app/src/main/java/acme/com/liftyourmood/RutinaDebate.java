@@ -37,6 +37,8 @@ public class RutinaDebate extends AppCompatActivity {
 
         distorsionesSeleccionadasArrayList = new ArrayList<String>(Arrays.asList(distorsionesSeleccionadas));
 
+        //con un iterador, quitamos las distorsiones que no hemos seleccionado, ya que nos han llegado vacías.
+
         Iterator itr = distorsionesSeleccionadasArrayList.iterator();
         while (itr.hasNext())
         {
@@ -45,73 +47,15 @@ public class RutinaDebate extends AppCompatActivity {
                 itr.remove();
         }
 
-
-
-
-
-
-
-/*
-
-        for(int i = 0; i< distorsionesSeleccionadas.length; i++){
-
-            if(distorsionesSeleccionadas[i].equals("")) i++;
-            if(i == distorsionesSeleccionadas.length) return;
-
-            distorsionesSeleccionadasArrayList.add(distorsionesSeleccionadas[i]);
-
-        }*/
-
-
-
+        // A través del manejador/adaptador, le metemos al listview las distorsiones
 
         AdaptadorDistorsiones adaptador = new AdaptadorDistorsiones(this);
         ListView lv1 = findViewById(R.id.listaDistorsionesSeleccionadas);
         lv1.setAdapter(adaptador);
 
-
-
-
-
-        //for  (int i=0; i<distorsionesSeleccionadas.length; i++)
-        //           Toast.makeText(this, distorsionesSeleccionadas[i], Toast.LENGTH_SHORT).show();
-
-        //Toast.makeText(this, nombreUsuario, Toast.LENGTH_SHORT).show();
-
-
-    /*
-        if(distorsionesSeleccionadas != null) {
-            for(int i = 0; i<distorsionesSeleccionadas.length;i++){
-
-                if(distorsionesSeleccionadas[i].equals("")) i++;
-                if(i == distorsionesSeleccionadas.length) return;
-
-
-                    LinearLayout linearLayout = findViewById(R.id.linearLayoutRutina);
-                    // Create TextView programmatically.
-                    TextView[] distorsionDisplayedRutinaArray = new TextView[distorsionesSeleccionadas.length];
-                    distorsionDisplayedRutinaArray[i] = new TextView(this);
-                    distorsionDisplayedRutinaArray[i].setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-                    distorsionDisplayedRutinaArray[i].setGravity(Gravity.CENTER);
-                    distorsionDisplayedRutinaArray[i].setText(distorsionesSeleccionadas[i] + " ");
-
-                    if (linearLayout != null) {
-                        linearLayout.addView(distorsionDisplayedRutinaArray[i]);
-                    }
-
-                }
-
-
-
-
-
-
-
-            }*/
-
-
     }
 
+    //con este manejador colocamos las distorsiones en la listview correspondiente
     class AdaptadorDistorsiones extends ArrayAdapter<String> {
 
         AppCompatActivity appCompatActivity;

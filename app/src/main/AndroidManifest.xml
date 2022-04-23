@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LiftYourMood">
-
+        <activity android:name=".EscribeTuPensamientoNegativo"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -29,7 +29,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-
         <activity
             android:name=".RutinaDebate"
             android:exported="true"
