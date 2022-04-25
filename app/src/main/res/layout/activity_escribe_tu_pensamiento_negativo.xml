@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".EscribeTuPensamientoNegativo"
     android:background="@drawable/customborder">
-
+    <!-- Intro -->
     <TextView
         android:id="@+id/introDistorsionesCognitivas"
         android:layout_width="match_parent"
@@ -15,20 +16,46 @@
         android:textAlignment="center"
         android:background="@drawable/customborder"/>
 
+    <!--Layout para dos columnas-->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:orientation="horizontal"
+        android:orientation="horizontal">
 
-        >
-
+        <!--Columna izquierda-->
 
         <LinearLayout
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:background="@drawable/customborder"/>
+            android:background="@drawable/customborder">
+
+            <!--Catastrofización-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/imageCatastrofizacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_volcan"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/subtituloCatastrofizacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="@string/catastrofizacionTitle" />
+            </LinearLayout>
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_weight="1"
