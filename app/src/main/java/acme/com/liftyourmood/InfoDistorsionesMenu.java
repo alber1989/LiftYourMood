@@ -4,12 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class EscribeTuPensamientoNegativo extends AppCompatActivity {
+public class InfoDistorsionesMenu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_escribe_tu_pensamiento_negativo);
+        setContentView(R.layout.activity_info_distorsiones_menu);
 
 
     }
