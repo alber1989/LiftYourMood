@@ -1,12 +1,23 @@
 <resources>
 
     <string name="app_name">LiftYourMood</string>
+
     <string name="distorsionesCognitivasTitle">Distorsiones Cognitivas</string>
     <string name="introduceNombre"> Introduce tu nombre</string>
 
+    <!--Nombre de las distorsiones-->
     <string name="prediccionFuturoTitle">Predicción de futuro</string>
     <string name="catastrofizacionTitle">Catastrofización</string>
     <string name="razonamientoEmocionalTitle">Razonamiento Emocional</string>
+    <string name="sobregeneralizacionTitle">Sobregeneralización</string>
+    <string name="minimizadoTitle">Minimizado de lo Positivo</string>
+    <string name="filtradoNegativoTitle">Filtrado Negativo</string>
+    <string name="todoONadaTitle">Todo o Nada </string>
+    <string name="autoCulpaTitle">Autoculpa</string>
+    <string name="culpaAOtrosTitle">Culpa a Otros</string>
+    <string name="lecturaMentalTitle">Lectura Mental</string>
+    <string name="estandarExageradoTitle">Estándares Exagerados</string>
+    <string name="deberiasTitle">Deberías</string>
 
     <string name="instruccionesDistorsionesCognitivas1"> Ahora </string>
     <string name="instruccionesDistorsionesCognitivas2"> selecciona aquellas distorsiones que identifiques en tu pensamiento</string>
@@ -25,5 +36,20 @@
     <string name="instrucciones_rutina_debate">Anota las razones y hechos que debatan este pensamiento irracional</string>
     <string name="has_seleccionado">Has seleccionado las siguientes distorsiones</string>
     <string name="escribeAqui">Escribe aquí...</string>
+
+    <!-- Infodistorsiones
+    1 Catastrofización
+2 Prediccion de futuro
+3 Razonamiento emocional
+4 Sobregeneralización
+5 Minimizado de lo positivo
+6 Filtrado negativo
+7 Totalidad o nada
+8 Autoculpa
+9 Culpa a otros
+10 Lectura mental
+11 Estándares exagerados
+12 Deberías
+    -->
 
 </resources>
