@@ -39,6 +39,7 @@ tools:context=".MainActivity">
 
         <CheckBox
             android:id="@+id/checkbox_catastrof_DC"
+            android:button="@drawable/volcan_48"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/catastrofizacionTitle"

@@ -2,6 +2,7 @@ package acme.com.liftyourmood;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
@@ -38,6 +39,9 @@ public class MenuSeleccionDistorsiones extends AppCompatActivity {
         // Is the view now checked?
         boolean checked = ((CheckBox)view).isChecked();
 
+        int checked_color = Color.CYAN;
+        int unchecked_color = Color.WHITE;
+
 
         // Check which checkbox was clicked
         switch(view.getId()) {
@@ -46,24 +50,36 @@ public class MenuSeleccionDistorsiones extends AppCompatActivity {
 
                     //Toast.makeText(this, "Funciona Checkbox", Toast.LENGTH_SHORT).show();
                   distorsionesSeleccionadas[0] = ((CheckBox)view).getText().toString();
+                  view.setBackgroundColor(checked_color);
+
 
                 }
 
-            else
+            else {
                     distorsionesSeleccionadas[0] = "";
+                    view.setBackgroundColor(unchecked_color);
+                }
                 break;
             case R.id.checkbox_prediccion_DC:
-                if (checked)
-                    distorsionesSeleccionadas[1] = ((CheckBox)view).getText().toString();
-            else
-                    distorsionesSeleccionadas[1] = "";
+                if (checked) {
+                    distorsionesSeleccionadas[1] = ((CheckBox) view).getText().toString();
+                    view.setBackgroundColor(checked_color);
+                }
+            else{
+                distorsionesSeleccionadas[1] = "";
+                view.setBackgroundColor(unchecked_color);
+            }
                 break;
 
             case R.id.checkbox_remocional_DC:
-                if (checked)
-                    distorsionesSeleccionadas[2] = ((CheckBox)view).getText().toString();
-            else
+                if (checked) {
+                    distorsionesSeleccionadas[2] = ((CheckBox) view).getText().toString();
+                    view.setBackgroundColor(checked_color);
+                }
+            else {
                     distorsionesSeleccionadas[2] = "";
+                    view.setBackgroundColor(unchecked_color);
+                }
                 break;
             default:
 
